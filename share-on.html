@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Share on social networks Example</title><!-- Used by Twitter share button -->
+
+	<title>Share on social networks Example</title>
 	<meta charset="UTF-8">
 
-	<!-- Open graph information for the social networks 
-			see http://ogp.me/ -->
+	<!-- Open graph information for the social networks, see http://ogp.me/ -->
 	<meta property="og:title" content="Your sample page" >
 	<meta property="og:url" content="http://www.akros.ch/" />
 	<meta property="og:site_name" content="AKROS AG" >
@@ -19,14 +19,9 @@
     <!-- Your personal style sheet -->
 	<link rel="stylesheet" href="style.css">
 
-	<script src="scripts.js"></script>
-	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 </head>
 
 <body>
-	<!-- Facebook button root -->
-	<div id="fb-root"></div>
-	
 
 	<div class="my-whatever-context">
 		<h4>Share on :</h4>
@@ -57,6 +52,11 @@
 			</div><!-- /.icon-container -->
 		</div><!-- /.social-icons -->
 	</div><!-- /.my-whatever-context -->
- 
+
+	<!-- jacascript imports -->
+	<div id="fb-root"></div>
+ 	<script src="scripts.js"></script>
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+
 </body>
 </html>
