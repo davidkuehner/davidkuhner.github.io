@@ -2,7 +2,7 @@
  *  Base Styles
 /* ------------------------------------ */
 
-.my-whatever-context {
+.your-whatever-container {
 	background-color: #3a4f5c;
 	border-radius: 20px;
 	color: white;
@@ -11,7 +11,7 @@
 	width: 300px;
 }
 
-.my-whatever-context h4 {
+.your-whatever-container h4 {
 	margin: 0 0 10px 0;
 }
 

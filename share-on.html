@@ -2,6 +2,21 @@
 <html>
 <head>
 
+	<!-- Tested and functional on :
+		- Windows:
+				- IE 11
+				- IE 10
+				- IE 9
+				- Firefox 37.0.1
+				- Chrome 44.0.2403.155 m
+		- OSX:
+				- Safari 8.0.7
+				- Firefox 39.0.3
+				- Chrome 44.0.2403.115 (64-bit)
+		- Ubuntu:
+				- Firefox 37.0.1
+				- Chromium 43.0.2357.130 Ubuntu 14.04
+		-->
 	<title>Share on social networks Example</title>
 	<meta charset="UTF-8">
 
@@ -23,40 +38,49 @@
 
 <body>
 
-	<div class="my-whatever-context">
-		<h4>Share on :</h4>
-		<div class="social-icons">
-			<div class="icon-container">
-				<div class="icon-hidden">
+	<div class="your-whatever-container"><!-- You can replace this div with your own "container" -->
+		<h4>Share on :</h4><!-- optional title -->
+		<div class="social-icons"><!-- contains the list of icons, NOT optional -->
+
+			<!-- share on facebook -->
+			<div class="icon-container"><!-- contains an icon for a social network -->
+				<div class="icon-hidden"><!-- contains the "real/ugly" share button and iframe -->
 					<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="icon"></div>
 				</div><!-- ./icon-hidden -->
-				<i class="icon-placeholder fa fa-facebook-square text-white"></i>
+				<i class="icon-placeholder fa fa-facebook-square text-white"></i><!-- this is the displayed icon see http://fortawesome.github.io/Font-Awesome/ -->
 			</div><!-- /.icon-container -->
+
+			<!-- share on linkedin -->
 			<div class="icon-container">
 				<div class="icon-hidden">
 					<script type="IN/Share"></script>
 				</div><!-- ./icon-hidden -->
 				<i class="icon-placeholder fa fa-linkedin-square text-white"></i>
 			</div><!-- /.icon-container -->
+
+			<!-- share on twitter -->
 			<div class="icon-container">
 				<div class="icon-hidden">
 					<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Twitter</a> 
 				</div><!-- ./icon-hidden -->
 				<i class="icon-placeholder fa fa-twitter-square text-white"></i>
 			</div><!-- /.icon-container -->
+
+			<!-- share on xing -->
 			<div class="icon-container">
 				<div class="icon-hidden">
 					<div data-type="xing/share" data-shape="square"></div>
 				</div><!-- ./icon-hidden -->
 				<i class="icon-placeholder fa fa-xing-square text-white"></i>
 			</div><!-- /.icon-container -->
+
 		</div><!-- /.social-icons -->
 	</div><!-- /.my-whatever-context -->
 
 	<!-- jacascript imports -->
-	<div id="fb-root"></div>
- 	<script src="scripts.js"></script>
-	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+	<div id="fb-root"></div><!-- needed by facebook -->
+ 	<script src="scripts.js"></script><!-- other script import -->
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script><!-- linkedin script import -->
 
 </body>
 </html>
