@@ -151,6 +151,20 @@ li:first-of-type {
 	padding-top: 0;
 }
 
+section {
+	padding: 40px 0 20px;
+}
+
+section h2 {
+	font-size: 2em;
+	font-weight: 200;
+}
+
+section h3 {
+	text-transform: uppercase;
+	font-weight: 200;
+}
+
 /* ------------------------------------ *
  *  Lateral navigation
 /* ------------------------------------ */
@@ -252,25 +266,7 @@ li:first-of-type {
 }
 
 .intro-parallax .cover {
-	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 20%, rgba(255,255,255,0) 100%);
-}
-
-/* ------------------------------------ *
- *  Intro section
-/* ------------------------------------ */
-
-section {
-	padding: 40px 0 20px;
-}
-
-section h2 {
-	font-size: 2em;
-	font-weight: 200;
-}
-
-section h3 {
-	text-transform: uppercase;
-	font-weight: 200;
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 20%, rgba(255,255,255,0) 50%);
 }
 
 /* ------------------------------------ *
@@ -360,7 +356,9 @@ section h3 {
 }
 
 .article {
+	background-color: #fff;
 	box-shadow: none;
+	cursor:pointer;
 }
 
 .owl-carousel .owl-item {
@@ -369,6 +367,54 @@ section h3 {
 
 #section-clients h2 {
 	margin-bottom: 10px;
+}
+
+.client-post {
+	background-color: #fcd204;
+}
+
+.client-description {
+	display: none;
+	left: 70%;
+	position: relative;
+	top: 10%;
+	z-index: 999;
+}
+
+.article:hover .client-description {
+	display: block;
+}
+
+.client-description p {
+	background-color: #fff;
+	box-shadow: 0 0 5px;
+	padding: 30px;
+}
+/* ----------- Zoom effect ---------- */
+
+.img-zoom {
+    overflow: hidden;
+}
+
+.img-zoom img {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    display: block;
+    transform: scale(1);
+    transition: transform 0.6s ease-in-out;
+/*    margin: auto;
+
+    height: auto;
+    max-height: 100%;
+
+    width: auto !important;
+    max-width: 100%;*/
+}
+
+.img-zoom:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /* ------------------------------------ *
