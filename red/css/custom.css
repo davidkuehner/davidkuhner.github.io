@@ -390,6 +390,11 @@ section h3 {
 	box-shadow: 0 0 5px;
 	padding: 30px;
 }
+
+.client-description p a {
+	display: inline-block;
+	margin-top: 15px;
+}
 /* ----------- Zoom effect ---------- */
 
 .img-zoom {
