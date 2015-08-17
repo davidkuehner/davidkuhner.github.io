@@ -62,7 +62,6 @@
         <!-- Theme custom CSS (all your CSS customizations) -->
         <link rel="stylesheet" href="css/custom.css">
 
-
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -75,8 +74,8 @@
 
     <body>
 
-        <!-- Page preloader (display loading animation while page loads) -->
-        <div id="preloader"><div class="pulse"></div></div>
+        <!-- Page preloader (display loading animation while page loads) 
+        <div id="preloader"><div class="pulse"></div></div>-->
 
         <!-- Begin page borders -->
         <div class="border-top"></div>
@@ -118,10 +117,10 @@
                 <!-- Begin single links wrapper -->
                 <ul class="cd-navigation cd-single-item-wrapper">
                     <li><a href="index.html" class="page-scroll">Top</a></li>
-                    <li><a href="#section-2" class="page-scroll">Individualösung</a></li>
-                    <li><a href="#section-2Bis" class="page-scroll">Entwicklungssupport</a></li>
-                    <li><a href="#section-9" class="page-scroll">Fallstudien</a></li>
-                    <li><a href="#section-3" class="page-scroll">Technologien & Methodiken</a></li>
+                    <li><a href="#section-individual-solution" class="page-scroll">Individualösung</a></li>
+                    <li><a href="#section-support" class="page-scroll">Entwicklungssupport</a></li>
+                    <li><a href="#section-clients" class="page-scroll">Fallstudien</a></li>
+                    <li><a href="#section-technology" class="page-scroll">Technologien & Methodiken</a></li>
                     <li><a href="http://www.akros/kontakt.html" target="_blank">Kontakt</a></li>
                 </ul>
                 <!-- End single links wrapper -->
@@ -129,43 +128,31 @@
                 <!-- Socials icons -->
                 <div class="social-icons"><!-- contains the list of icons, NOT optional -->
 
-                    <!-- share on facebook -->
-                    <div class="icon-container"><!-- contains an icon for a social network -->
-                        <div class="icon-hidden"><!-- contains the "real/ugly" share button and iframe -->
-                            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="icon"></div>
-                        </div><!-- ./icon-hidden -->
-                        <i class="icon-placeholder fa fa-facebook-square text-white"></i><!-- this is the displayed icon see http://fortawesome.github.io/Font-Awesome/ -->
-                    </div><!-- /.icon-container -->
+                    <!-- share on facebook test -->
+                    <a class="share-on-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://davidkuhner.github.io/share-on.html" target="popup">
+                        <i class="icon-placeholder fa fa-facebook-square text-white"></i><!-- displayed icon see http://fortawesome.github.io/Font-Awesome/ -->
+                    </a><!-- /.share-on-facebook -->
 
                     <!-- share on linkedin -->
-                    <div class="icon-container">
-                        <div class="icon-hidden">
-                            <script type="IN/Share"></script>
-                        </div><!-- ./icon-hidden -->
+                    <a class="share-on-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://davidkuhner.github.io/share-on.html" target="popup">
                         <i class="icon-placeholder fa fa-linkedin-square text-white"></i>
-                    </div><!-- /.icon-container -->
+                    </a><!-- /.share-on-linkedin -->
 
                     <!-- share on twitter -->
-                    <div class="icon-container">
-                        <div class="icon-hidden">
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Twitter</a> 
-                        </div><!-- ./icon-hidden -->
+                    <a class="share-on-twitter" href="http://twitter.com/share?url=http://davidkuhner.github.io/share-on.html&text=Default value of the Tweet" target="popup">
                         <i class="icon-placeholder fa fa-twitter-square text-white"></i>
-                    </div><!-- /.icon-container -->
+                    </a><!-- /.share-on-twitter -->
 
                     <!-- share on xing -->
-                    <div class="icon-container">
-                        <div class="icon-hidden">
-                            <div data-type="xing/share" data-shape="square"></div>
-                        </div><!-- ./icon-hidden -->
+                    <a  class="share-on-xing" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url=http://davidkuhner.github.io/share-on.html" target="popup">
                         <i class="icon-placeholder fa fa-xing-square text-white"></i>
-                    </div><!-- /.icon-container -->
+                    </a><!-- /.share-on-xing -->
 
                 </div><!-- /.social-icons -->
 
-            </div>
+            </div><!-- /.nav-inner -->
 
-        </nav>
+        </nav><!-- /.cd-lateral-nav -->
 
         <!-- /////////////////////////
         ////////// End menu //////////
@@ -255,7 +242,7 @@
                         <div class="col-left col-md-10">
                             <div class="col-inner">
 
-                                <h2 class="animated fadeInRight">Individuallösung by AKROS</h2>
+                                <h2 class="animated fadeIn">Individuallösung by AKROS</h2>
 
                                 <p>
                                     Individualsoftware-Lösungen von AKROS bieten uneingeschränkten Nutzen:
@@ -284,14 +271,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-left col-md-1 col-md-offset-1">
-                            <span class="circle circle-gray">
+                            <span class="circle circle-gray animated fadeIn">
                                 <i class="fa fa-users"></i>
                             </span>
                         </div>
                         <div class="col-left col-md-10">
                             <div class="col-inner">
 
-                                <h2>Entwicklungssupport by AKROS</h2>
+                                <h2 class="animated fadeInRight">Entwicklungssupport by AKROS</h2>
 
                                 <p>
                                     Nach Ihrem Mass begleitet unseres einzeln Spezialist oder Team Ihnenin jedem Projektschritt
@@ -388,14 +375,14 @@
                 <div class="container title-container">
                     <div class="row">
                         <div class="col-left col-md-1 col-md-offset-1">
-                            <span class="circle circle">
+                            <span class="circle animated fadeIn">
                                 <i class="fa fa-hand-pointer-o"></i>
                             </span>
                         </div>
                         <div class="col-left col-md-10">
                             <div class="col-inner">
 
-                                <h2>Fallstudien</h2>
+                                <h2 class="animated fadeInRight">Fallstudien</h2>
 
                             </div> <!-- /.col-inner -->
                         </div> <!-- /.col -->

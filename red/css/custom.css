@@ -188,47 +188,24 @@ li:first-of-type {
  *  Social icons
 /* ------------------------------------ */
 
-.social-icons {
-	color: white; /* You can change the color of the icons here*/
+#cd-lateral-nav .social-icons {
 	text-align: center;
 	width: 100%;
 }
 
-.social-icons .icon-container {
+#cd-lateral-nav .social-icons a {
 	display: inline;
-	margin: 0 20px;
-	position: relative;
+	float: none;
+	margin: 0 8px;
 }
 
-.social-icons div:first-of-type {
-	margin-left: 0;
+#cd-lateral-nav .social-icons a i{
+	color: #fff;
+	font-size: 30px;
 }
 
-.social-icons .icon-placeholder {
-	font-size: 24px;
-	height: 24px;
-	left:0;
-	line-height: 24px;
-	position: absolute;
-	top:0;
-	width: 24px;
-	z-index: 0;
-}
-
-.social-icons .icon-hidden {
-	height: 22px;
-	opacity: 0.0;
-	overflow: hidden;
-	padding: 1px;
-	position: absolute;
-	top:0;
-	left:0;
-	width: 22px;
-	z-index: 1;
-}
-
-.social-icons .icon-hidden:hover ~ .icon-placeholder {
-	color: #93becd; /* You can change the hover color of the icons here*/
+#cd-lateral-nav .social-icons a:hover i{
+	color: #93becd;
 }
 
 /* ------------------------------------ *
