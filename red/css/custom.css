@@ -87,6 +87,14 @@ Note: IE9 doesn't support transitions and animations
 	border: 2px solid #848484;
 }
 
+.circle-medium-brown {
+	border: 2px solid #c3bbb2;
+}
+
+.circle-dark-brown {
+	border: 2px solid #81725e;
+}
+
 .circle-full {
 	border: none;
 	background-color: #fff;
@@ -255,8 +263,8 @@ section h3 {
 .intro-caption .divider {
 	background-color: #3a4f5c;
 	height: 1px;
-    margin: 30px 0px 30px -80px;
-    width: 550px;
+    margin: 30px 0px 30px -100%;
+    width: 200%;
 }
 
 .intro-caption p {
@@ -267,6 +275,38 @@ section h3 {
 
 .intro-parallax .cover {
 	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 20%, rgba(255,255,255,0) 50%);
+}
+
+.intro-parallax .logo img {
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 0px 50px 50px rgba(255, 255, 255, 0.8);
+	max-width: 200px;
+}
+
+/* ------------------------------------ *
+ *  Datasheet
+/* ------------------------------------ */
+.datasheet {
+	background-color: #fff;
+    bottom: 40px;
+    height: auto;
+    left: 0;
+    position: absolute;
+    width: 48%;
+    z-index: 3;
+}
+
+
+.datasheet p, .datasheet h3 {
+	margin-left: 20px;
+    padding: 20px;
+	background-color: #fff;
+}
+
+.datasheet h3 {
+	font-size: 1.8em;
+	padding-bottom: 0;
+	text-transform: none;
 }
 
 /* ------------------------------------ *
@@ -286,12 +326,55 @@ section h3 {
 /* ------------------------------------ */
 
 /* ------------------------------------ *
- *  Description section
+ *  Support section
 /* ------------------------------------ */
 
 /* ------------------------------------ *
- *  Support section
+ *  Project team section
 /* ------------------------------------ */
+
+#section-project-team {
+	padding-top: 0;
+}
+
+#section-project-team .project-team-image {
+	background: #ffffff url("../img/team/team-2.png") top center / cover no-repeat;
+	height: 800px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+#section-project-team .avatar {
+	max-width: 150px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#section-project-team .profile h4 {
+	font-size: 1.5em;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+#section-project-team .profile p {
+	font-size: 1.2em;
+}
+
+
+#section-project-team .avatar-row {
+	margin-bottom: 20px;
+}
+
+/* Medium devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+	#section-project-team .profile p, #section-project-team .profile h4 {
+	text-align: center;
+	}
+	#section-project-team .profile p {
+		margin-bottom: 50px;
+	}
+}
+
 
 /* ------------------------------------ *
  *  Team profiles section
@@ -303,7 +386,7 @@ section h3 {
 }
 
 #section-team-profiles .container-row {
-	background: #ffffff url("../img/team/work-bg.png") top right / cover no-repeat;
+	background: #ffffff url("../img/team/team-1.png") top right / cover no-repeat;
 	padding: 600px 0 0;
 }
 
@@ -416,11 +499,10 @@ section h3 {
 }
 
 /* ------------------------------------ *
- *  Technologies section
+ *  Technologies & characteristics
 /* ------------------------------------ */
 #section-technology {
 	background: #ffffff url("../img/technology/tablet_bg.jpg") top right / cover no-repeat;
-	padding-bottom: 60px;
 }
 
 #section-technology .cover {
@@ -428,21 +510,21 @@ section h3 {
 	background-color: rgba(255, 255, 255, 0.75);
 }
 
-#section-technology ul {
+#section-technology ul, #section-characteristics ul {
 	margin-top: 20px;
 }
 
-#section-technology li {
+#section-technology li, #section-characteristics li {
 	list-style: none;
-}
-
-#section-technology .title-row {
-	padding-bottom: 30px;
 }
 
 #section-technology .row .row .circle {
 	text-align: center;
 	display: block;
+}
+
+#section-technology .row, #section-characteristics .row {
+    margin-bottom: 30px;
 }
 
 /* ------------------------------------ *
